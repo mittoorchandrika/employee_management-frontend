@@ -21,7 +21,7 @@ function App() {
 
   // ✅ Add Employee
   const handleAddEmployee = () => {
-    fetch("http://localhost:5000/employees", {
+    fetch("https://employee-backend.onrender.com/employees", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newEmployee),
