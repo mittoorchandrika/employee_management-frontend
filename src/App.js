@@ -37,7 +37,7 @@ function App() {
 
   // ✅ Delete Employee
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/employees/${id}`, { method: "DELETE" })
+    fetch(`https://employee-backend.onrender.com/employees/${id}`, { method: "DELETE" })
       .then((response) => response.json())
       .then(() => {
         alert("Employee deleted!");
